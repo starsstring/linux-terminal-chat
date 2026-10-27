@@ -1,0 +1,4 @@
+chat
+__pycache__/
+*.o
+*.core

@@ -1,0 +1,72 @@
+{
+  "platform": "Linux-6.18.58-0-virt-x86_64-with-musl1",
+  "os_release": "NAME=\"Alpine Linux\"\nID=alpine\nVERSION_ID=3.24.3\nPRETTY_NAME=\"Alpine Linux v3.24\"\nHOME_URL=\"https://alpinelinux.org/\"\nBUG_REPORT_URL=\"https://gitlab.alpinelinux.org/alpine/aports/-/issues\"\n",
+  "compiler": "gcc (Alpine 15.2.0) 15.2.0",
+  "source_sha256": "ba57840d10ffbc82f482f843a890d9b551bbedebbaaef722fee95c49e7695cba",
+  "server_startup": "Server listening on port 48555. Ctrl+C to stop.",
+  "passed": 15,
+  "total": 15,
+  "tests": [
+    {
+      "test": "automatic_user_ids",
+      "status": "PASS"
+    },
+    {
+      "test": "bidirectional_group_chat",
+      "status": "PASS"
+    },
+    {
+      "test": "utf8_chinese",
+      "status": "PASS"
+    },
+    {
+      "test": "tcp_split_message",
+      "status": "PASS"
+    },
+    {
+      "test": "tcp_coalesced_messages",
+      "status": "PASS"
+    },
+    {
+      "test": "crlf_input",
+      "status": "PASS"
+    },
+    {
+      "test": "maximum_length_message",
+      "status": "PASS"
+    },
+    {
+      "test": "overlong_disconnect_isolated",
+      "status": "PASS"
+    },
+    {
+      "test": "quit_and_reconnect",
+      "status": "PASS"
+    },
+    {
+      "test": "reject_terminal_control_characters",
+      "status": "PASS"
+    },
+    {
+      "test": "sixteen_clients_and_capacity_limit",
+      "status": "PASS"
+    },
+    {
+      "test": "invalid_arguments",
+      "status": "PASS"
+    },
+    {
+      "test": "real_c_client_send_receive_quit",
+      "status": "PASS"
+    },
+    {
+      "test": "client_stdin_eof",
+      "status": "PASS"
+    },
+    {
+      "test": "server_shutdown_client_exits",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Local Linux virtual machine; no physical LubanCat or cross-device test."
+}

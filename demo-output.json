@@ -1,0 +1,21 @@
+{
+  "events": [
+    {
+      "client": "client-A",
+      "input": "Hello from terminal A!"
+    },
+    {
+      "client": "client-B",
+      "input": "你好，终端 A！"
+    },
+    {
+      "client": "client-A",
+      "input": "/quit"
+    }
+  ],
+  "stdout": {
+    "server": "Server listening on port 47817. Ctrl+C to stop.\n",
+    "client-A": "[system] You are User 1. Enter text; /quit to leave.\n[system] User 1 joined.\n[system] User 2 joined.\n[User 1] Hello from terminal A!\n[User 2] 你好，终端 A！\n[system] Connection closed.\n",
+    "client-B": "[system] You are User 2. Enter text; /quit to leave.\n[system] User 2 joined.\n[User 1] Hello from terminal A!\n[User 2] 你好，终端 A！\n[system] User 1 left.\n"
+  }
+}

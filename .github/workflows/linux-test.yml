@@ -1,0 +1,17 @@
+name: Linux build and integration tests
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile with warnings as errors
+        run: make CFLAGS='-std=c11 -Wall -Wextra -Wpedantic -Werror -O2'
+      - name: Run integration tests
+        run: python3 test_chat.py
+      - name: Keep test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-test-results
+          path: test-results.json

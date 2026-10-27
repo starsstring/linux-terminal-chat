@@ -1,0 +1,6 @@
+Offline boot: PASS
+Server + two actual C clients: PASS
+Interactive message delivery: PASS
+Quit notification: PASS
+Integration suite rerun inside offline image: 15/15 PASS
+No network adapter attached. No physical board used.

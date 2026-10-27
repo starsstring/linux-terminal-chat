@@ -1,0 +1,27 @@
+Actual Linux C program demonstration
+[server output]
+Server listening on port 47817. Ctrl+C to stop.
+[client-A output]
+[system] You are User 1. Enter text; /quit to leave.
+[system] User 1 joined.
+[client-B output]
+[system] You are User 2. Enter text; /quit to leave.
+[system] User 2 joined.
+[client-A output]
+[system] User 2 joined.
+[client-A input] Hello from terminal A!
+[client-A output]
+[User 1] Hello from terminal A!
+[client-B output]
+[User 1] Hello from terminal A!
+[client-B input] 你好，终端 A！
+[client-A output]
+[User 2] 你好，终端 A！
+[client-B output]
+[User 2] 你好，终端 A！
+[client-A input] /quit
+[client-B output]
+[system] User 1 left.
+[client-A output]
+[system] Connection closed.
+DEMO PASS: two actual C clients exchanged messages and quit.
